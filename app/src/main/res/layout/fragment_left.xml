@@ -1,0 +1,78 @@
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/left_bg"
+    tools:context="com.zzb.notepad.fragment.LeftFragment">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px200"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zzb.notepad.view.RoundImageView
+                android:id="@+id/img_head"
+                android:layout_width="@dimen/px120"
+                android:layout_height="@dimen/px120"
+                android:layout_marginLeft="@dimen/px30"
+                android:src="@drawable/headpic"
+                imagecontrol:border_outside_color="#fff7f2e9"
+                imagecontrol:border_thickness="@dimen/px04" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_head"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_toRightOf="@+id/img_head"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px40" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_home_page"
+            style="@style/LeftPage_TextStyle"
+            android:background="@drawable/sel_left_text"
+            android:text="@string/note"
+            android:layout_marginTop="@dimen/px200"/>
+
+        <View style="@style/View_white_line_style" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            style="@style/LeftPage_TextStyle"
+            android:background="@drawable/sel_left_text"
+            android:text="@string/account" />
+
+        <View style="@style/View_white_line_style" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/LeftPage_TextStyle"
+            android:background="@drawable/sel_left_text"
+            android:text="@string/phone" />
+
+        <View style="@style/View_white_line_style" />
+
+        <TextView
+            android:id="@+id/tv_help"
+            style="@style/LeftPage_TextStyle"
+            android:background="@drawable/sel_left_text"
+            android:text="@string/help" />
+
+        <View style="@style/View_white_line_style" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>
